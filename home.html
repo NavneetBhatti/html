@@ -11,7 +11,7 @@
     </head>
     <body>
         <div style="border: 1px solid red">
-            <h1>Welcome to Page..</h1>
+            <h1>Welcome to Page..Testing</h1>
             <p>This is a simple web page.<br> after the break tag</p>
         </div>
 
@@ -19,5 +19,29 @@
             <h1 style="background-color: red; color: yellow">Welcome to Page</h1>
             <p style="font-weight: bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span style="color: red">Lorem Ipsum</span> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
         </div>
+
+        <form>
+            <label for="firstname">Enter your name:</label>
+           <input type="text" name="firstname" id="firstname"  placeholder="Enter your name" required> <br><br><br>
+           <h2>Select your drink</h2>
+           <input type="radio" name="drink">small drink<br>
+           <input type="radio" name="drink">Regular drink<br>
+           <input type="radio" name="drink">Large drink<br>
+
+            <h4>Select option</h4>
+           <input type="checkbox" name="genre1" value="g1">Pop<br>
+           <input type="checkbox" name="genre2" value="g2">Rock<br>
+           <input type="checkbox" name="genre3" value="g3">Rap<br> <br> <br>
+
+           <h4>How many wheels do you need to replace for your car?</h4>
+           <select name="days" required>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+           </select><br> <br>
+
+           <input type="submit" value="Submit">
+
+        </form>
     </body>
 </html>

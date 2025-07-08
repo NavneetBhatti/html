@@ -2,22 +2,30 @@
 <html>
     <head>
         <title>My web page</title>
-        <style>
-            h1{
-                color: blue;
-                font-size: 24px;
-            }
-        </style>
     </head>
     <body>
-        <div style="border: 1px solid red">
-            <h1>Welcome to Page..Testing</h1>
-            <p>This is a simple web page.<br> after the break tag</p>
-        </div>
+        <form>
+            <label for="firstname">Enter your name:</label>
+            <input type="text"  name="firstname" id="firstname" placeholder="First name" required>
 
-        <div style="border: 5px solid black; margin-top: 100px">
-            <h1 style="background-color: red; color: yellow">Welcome to Page</h1>
-            <p style="font-weight: bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span style="color: red">Lorem Ipsum</span> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-        </div>
+            <h2>What size of drink would you like to order?</h2>
+            <input type="radio" name="drink" value="small">Small drink<br>
+            <input type="radio" name="drink" value="large">Large drink<br>
+            <input type="radio" name="drink" value="regulat">Regular drink<br>
+
+            <h2>Whats your favourite Game   </h2>
+            <input type="checkbox" name="game1" value="g1">Cricket<br>
+            <input type="checkbox" name="game2" value="g2">Footbal<br>
+            <input type="checkbox" name="game3" value="g3">badminton<br>
+
+            <h4>How many wheels do you need to replace for your car?</h4>
+            <select name="days" required>
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
